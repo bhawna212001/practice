@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+    <body class="flex items-center justify-center h-screen bg-stone-500">
+        <div class="bg-gray-500 rounded-lg shadow-lg p-6 w-80">
+            <input type="text" id="display" class="w-full bg-gray-200 h-14 text-right text-3xl rounded-8xl border border-gray-200  mb-6 p-4 " disabled>
+            <div class="grid grid-cols-4 gap-2">
+                <button class="bg-blue-300 text-3xl white rounded h-14 col-span-2" onclick="clearDisplay()">C</button>
+                <button class="bg-yellow-400 text-3xl white rounded h-14" onclick="deleteLast()">⌫</button>
+                <button class="bg-yellow-400 text-3xl white rounded h-14" onclick="append('+')">+</button>
+                
+                
+          
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('7')">7</button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('8')">8</button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('9')">9</button>
+                <button class="bg-yellow-400 text-3xl white rounded h-14" onclick="append('/')">/</button>
+
+
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('4')">4</button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('5')">5</button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('6')">6</button>
+                <button class="bg-yellow-400 text-3xl white rounded h-14" onclick="append('*')">*</button>
+    
+                
+    
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('1')">1</button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('2')">2</button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('3')">3</button>
+                <button class="bg-yellow-400 text-3xl white rounded h-14" onclick="append('-')">-</button>
+
+                
+               
+               
+                <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold h-14" onclick="appendToDisplay('0')">0</button>
+                <button class="bg-yellow-400 text-3xl white rounded h-14" onclick="calculateResult()">=</button>
+                <button class="bg-yellow-400 text-3xl white font-bold h-14" onclick="append('.')">.</button>
+                <button class="bg-yellow-400 text-3xl white rounded h-14" onclick="append('%')">%</button>
+                
+            </div>
+        </div>
+    
+    <script src="javascript/script.js"></script>
+</body>
+</html>
